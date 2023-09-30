@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container-fluid {
+        background-color: #0dcaf0;
+        height: 60px;
+      }
+      nav {
+        background-color: #a1a0a5;
+        height: 40px;
+      }
+      .container {
+        height: 100vh;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 240px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body bg-light>
+    <div class="container-fluid">
+      <p class="h3 text-center text-dark py-2">Ethnus layout</p>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active text-white" href="#">HOME</a>
+          <a class="nav-link active text-white" href="#">MENU</a>
+          <a class="nav-link active text-white" href="#">ABOUT</a>
+          <a class="nav-link active text-white" href="#">CONTACT</a>
+        </div>
+      </div>
+      <div
+        class="d-grid gap-5 d-md-flex justify-content-md-end"
+        style="margin: 50px"
+      >
+        <a class="nav-link active text-white" href="#">SIGNUP </a>
+        <a class="nav-link active text-white" href="#">LOGIN </a>
+      </div>
+    </nav>
+    <p class="text-center text-dark">Write your content here</p>
+    <div class="container bg-dark">
+      <p class="text-center text-light">This is</p>
+    </div>
+  </body>
+</html>

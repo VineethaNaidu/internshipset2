@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript 7</title>
+  </head>
+  <style>
+    h2 {
+      color: #00008b;
+    }
+  </style>
+  <body>
+    <form>
+      <img id="myimg" src="train.png" />
+      <center>
+        <h2>Click the following buttons to handle animation</h2>
+        <input type="button" value="Start" onclick="startMoving();" />
+        <input type="button" value="Stop" onclick="stopMoving();" />
+      </center>
+    </form>
+
+    <script type="text/javascript">
+      var img = null;
+      var intervalID = null;
+      var isMoving = false;
+
+      function init() {
+        img = document.getElementById("myimg");
+        img.style.position = "relative";
+        img.style.left = "50px";
+      }
+
+      function startMoving() {
+        if (!isMoving) {
+          intervalID = setInterval(moveRight, 1000);
+          isMoving = true;
+        }
+      }
+
+      function stopMoving() {
+        if (isMoving) {
+          clearInterval(intervalID);
+          isMoving = false;
+        }
+      }
+
+      function moveRight() {
+        img.style.left = parseInt(img.style.left) + 50 + "px";
+      }
+
+      window.onload = init;
+    </script>
+  </body>
+</html>
